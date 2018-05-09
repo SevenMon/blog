@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'frontpc\HomeController@index');
+Route::get('/home', 'frontpc\HomeController@index');
+Route::get('/category', 'frontpc\CategoryController@index');
+Route::get('/archives', 'frontpc\ArchivesController@index');
+Route::get('/open', 'frontpc\OpenController@index');
+Route::get('/about', 'frontpc\AboutController@index');
+Route::get('/label', 'frontpc\LabelController@index');
