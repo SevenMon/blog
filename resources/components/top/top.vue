@@ -1,11 +1,9 @@
 <template>
-    <div class="top-wrapper">
-        <transition name="top">
-            <div class="top" @click="top" v-show="scroll_html > 100">
-                <i class="fa fa-arrow-up"></i>
-            </div>
-        </transition>
-    </div>
+    <transition name="top">
+        <div class="top" @click="top" v-show="scroll_html > 100">
+            <i class="fa fa-arrow-up"></i>
+        </div>
+    </transition>
 </template>
 
 <script>
@@ -38,8 +36,9 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<link type="text/css" rel="styleSheet"  href="./fonts/font-awesome.min.css" />
 <style scoped>
+    /*字体图标用的是awesome 可以自行引入或者开启下面的注释进行开启*/
+    /*@import './fonts/font-awesome.min.css';*/
     .top{
         background-color: black;
         display: inline-block;

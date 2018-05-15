@@ -6,6 +6,7 @@
  */
 import $ from "jquery";
 import top from '../../components/top/top.vue';
+import sideBar from '../../components/sideBar/sideBar.vue';
 
 require('./bootstrap');
 
@@ -25,21 +26,15 @@ const app = new Vue({
 
     },
     data:{
-
+        showSide:0
     },
     computed:{
 
     },
     methods:{
-        top(){
-            $('html').animate({
-                    scrollTop: 0
-                },
-                200);
-            return false;
-        }
+
     },
     components: {
-        top,
+        top,sideBar
     },
 });

@@ -75,7 +75,8 @@
             </p>
         </div>
     </div>
-    <top></top>
+    <side-bar></side-bar>
+    <top :showSide="showSide"></top>
 </div>
 <script src="/js/app.js"></script>
 </body>
