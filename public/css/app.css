@@ -320,8 +320,8 @@ th {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(/fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.eot?f4769f9bdb7466be65088239c12046d1);
-  src: url(/fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.eot?f4769f9bdb7466be65088239c12046d1) format("embedded-opentype"), url(/fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.woff2?448c34a56d699c29117adc64c43affeb) format("woff2"), url(/fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.woff?fa2772327f55d8198301fdb8bcfc8158) format("woff"), url(/fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.ttf?e18bbf611f2a2e43afc071aa2f4e1512) format("truetype"), url(/fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.svg?89889688147bd7575d6327160d64e760) format("svg");
+  src: url(/fonts/vendor/_bootstrap-sass@3.3.7@bootstrap-sass/bootstrap/glyphicons-halflings-regular.eot?f4769f9bdb7466be65088239c12046d1);
+  src: url(/fonts/vendor/_bootstrap-sass@3.3.7@bootstrap-sass/bootstrap/glyphicons-halflings-regular.eot?f4769f9bdb7466be65088239c12046d1) format("embedded-opentype"), url(/fonts/vendor/_bootstrap-sass@3.3.7@bootstrap-sass/bootstrap/glyphicons-halflings-regular.woff2?448c34a56d699c29117adc64c43affeb) format("woff2"), url(/fonts/vendor/_bootstrap-sass@3.3.7@bootstrap-sass/bootstrap/glyphicons-halflings-regular.woff?fa2772327f55d8198301fdb8bcfc8158) format("woff"), url(/fonts/vendor/_bootstrap-sass@3.3.7@bootstrap-sass/bootstrap/glyphicons-halflings-regular.ttf?e18bbf611f2a2e43afc071aa2f4e1512) format("truetype"), url(/fonts/vendor/_bootstrap-sass@3.3.7@bootstrap-sass/bootstrap/glyphicons-halflings-regular.svg?89889688147bd7575d6327160d64e760) format("svg");
 }
 
 .glyphicon {
@@ -11420,6 +11420,13 @@ body {
   height: 100%;
 }
 
+.main-body {
+  transition: all .5s;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+}
+
 .main {
   min-height: 100%;
   width: 100%;
@@ -11447,7 +11454,7 @@ body {
 }
 
 .main .header .header-wrapper {
-  width: 65%;
+  width: 60%;
   height: 85px;
   padding: 28px 0px 17px 0px;
   margin: 0 auto;
@@ -11495,7 +11502,7 @@ body {
 }
 
 .main .content {
-  width: 65%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -11520,5 +11527,19 @@ body {
   font-size: 15px;
   line-height: 15px;
   padding-top: 18px;
+}
+
+.main .side {
+  z-index: 200;
+  position: fixed;
+  width: 0px;
+  height: 100%;
+  background: #1d2935;
+  right: 0;
+  top: 0;
+  transition: all .5s;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
 }
 

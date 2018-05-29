@@ -19,9 +19,7 @@
                 status:0
             }
         },
-        props:{
-            showSide
-        },
+        props:['showside'],
         created(){
         },
         methods:{
@@ -32,14 +30,15 @@
                     this._toLine();
                 }
                 this.status = this.status == 0 ? 1 : 0;
+                this.$emit('updateside');
             },
             toArrow(){
-                if(status == 0) {
+                if(this.status == 0) {
                     this._toArrow();
                 }
             },
             toLine(){
-                if(status == 0) {
+                if(this.status == 0) {
                     this._toLine();
                 }
             },
@@ -116,6 +115,7 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
     .sidebar {
+        z-index: 500;
         position: fixed;
         bottom: 94px;
         right: 20px;

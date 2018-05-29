@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/app.css">
 </head>
-<body>
+<body class="main-body">
 <div class="main" id="app">
     <div class="header">
         <div class="header-wrapper">
@@ -28,39 +28,6 @@
     </div>
     <div class="content">
         @yield('content')
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
     </div>
 
     <div class="footer">
@@ -75,8 +42,11 @@
             </p>
         </div>
     </div>
-    <side-bar></side-bar>
-    <top :showSide="showSide"></top>
+    <side-bar :showside="updateside" @updateSide="updateside"></side-bar>
+    <top></top>
+    <aside class="side">
+        
+    </aside>
 </div>
 <script src="/js/app.js"></script>
 </body>
