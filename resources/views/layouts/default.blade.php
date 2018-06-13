@@ -3,7 +3,7 @@
 <head>
     <title>@yield('title','晓峰的博客')</title>
     <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/app.css?{{time()}}">
 </head>
 <body class="main-body">
 <div class="main" id="app">
@@ -15,12 +15,12 @@
             <div class="menu-wrapper">
                 <nav class="menu">
                     <ul class="menu-ul">
-                        <li class="menu-li"><i class="fa fa-fw fa-home"></i> 首页</li>
-                        <li class="menu-li"><i class="fa fa-fw fa-th"></i> 分类</li>
-                        <li class="menu-li"><i class="fa fa-fw fa-archive"></i> 归档</li>
-                        <li class="menu-li"><i class="fa fa-fw fa-tags"></i> 标签</li>
-                        <li class="menu-li"><i class="fa fa-fw fa-github"></i> 开源</li>
-                        <li class="menu-li"><i class="fa fa-fw fa-user"></i> 关于</li>
+                        <li class="menu-li"><a href="#"><i class="fa fa-fw fa-home"></i> 首页</a></li>
+                        <li class="menu-li"><a href="#"><i class="fa fa-fw fa-th"></i> 分类</a></li>
+                        <li class="menu-li"><a href="#"><i class="fa fa-fw fa-archive"></i> 归档</a></li>
+                        <li class="menu-li"><a href="#"><i class="fa fa-fw fa-tags"></i> 标签</a></li>
+                        <li class="menu-li"><a href="#"><i class="fa fa-fw fa-github"></i> 开源</a></li>
+                        <li class="menu-li"><a href="#"><i class="fa fa-fw fa-user"></i> 关于</a></li>
                     </ul>
                 </nav>
             </div>
@@ -45,7 +45,43 @@
     <side-bar :showside="updateside" @updateSide="updateside"></side-bar>
     <top></top>
     <aside class="side">
-        
+        <div class="side-wrapper">
+            <div class="author-info">
+                <p class="head-img">
+                    <img src="/img/head_img.jpeg" style="width: 100px;height: 100px" />
+                </p>
+                <p class="nickname">
+                    SevenMon
+                </p>
+            </div>
+            <nav class="navigation">
+                <div class="nav-item">
+                    <p class="num">85</p>
+                    <p class="name">日志</p>
+                </div>
+                <div class="nav-item">
+                    <p class="num">85</p>
+                    <p class="name">日志</p>
+                </div>
+                <div class="nav-item">
+                    <p class="num">85</p>
+                    <p class="name">日志</p>
+                </div>
+            </nav>
+            <div class="author-sign">
+                <p class="sign">
+                    个性签名：丶把自己的心带入你的位置，用三分沉静来体会你的咆哮。
+                </p>
+            </div>
+            <div class="author-links">
+                <span class="links-item">
+                    <a class="link" title="QQ" target="_blank" href="http://www.baidu.com">
+                        <i class="fa fa-fw fa-qq"></i>
+                        QQ
+                    </a>
+                </span>
+            </div>
+        </div>
     </aside>
 </div>
 <script src="/js/app.js"></script>
