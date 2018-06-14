@@ -9,6 +9,10 @@ class HomeController extends Controller
 {
     //页面
     public function index(){
-        return view('Home/index');
+    	$title = 'SevenMon的微博-PHP博客-全栈博客';
+    	$param = array(
+    		'title' => $title
+		);
+        return view('Home/index',$param);
     }
 }

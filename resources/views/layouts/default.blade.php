@@ -61,11 +61,11 @@
                 </div>
                 <div class="nav-item">
                     <p class="num">85</p>
-                    <p class="name">日志</p>
+                    <p class="name">分类</p>
                 </div>
                 <div class="nav-item">
                     <p class="num">85</p>
-                    <p class="name">日志</p>
+                    <p class="name">标签</p>
                 </div>
             </nav>
             <div class="author-sign">
